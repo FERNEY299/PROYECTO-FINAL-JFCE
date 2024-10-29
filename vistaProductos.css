@@ -1,0 +1,296 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+/* Filtros */
+.filtros {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0; /* Ajusta el margen para reducir el espacio vertical */
+  padding: 10px 20px; /* Añade padding interno */
+  background-color: #f0f0f0; /* Color de fondo para destacar los filtros */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destacar la sección */
+  position: relative; /* Asegura que esté justo debajo del header */
+  top: 0; /* Mantiene la posición */
+}
+
+.filtro {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px; /* Separación entre filtros */
+}
+
+input, select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px; /* Añade un pequeño margen superior a los inputs */
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.logo img {
+  height: 60px; /* Ajusta el tamaño del logo */
+}
+
+.nombreEmpr h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #4caf50;
+}
+
+.nombreEmpr p {
+  margin: 0;
+  font-size: 12px;
+  color: #999;
+}
+
+/* Navegación */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f8f8f8;
+  margin-bottom: 20px;
+}
+
+
+#cancelarCompra {
+  background-color: #f44336; /* Rojo */
+  color: white;
+}
+
+#completarCompra {
+  background-color: #4CAF50; /* Verde */
+  color: white;
+}
+
+/* Botones */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+/* Filtros */
+.filtros {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filtro {
+  display: flex;
+  flex-direction: column;
+}
+
+input, select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Sección de productos */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Menor espacio entre tarjetas */
+  justify-content: center;
+  padding: 20px;
+}
+
+.tarjeta-producto {
+  width: 150px; /* Reducido el tamaño de la tarjeta */
+  padding: 10px; /* Menor padding */
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Menor borde redondeado */
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+}
+
+.tarjeta-producto img {
+  width: 100%; /* Ajuste al tamaño del contenedor */
+  height: 100px; /* Altura más pequeña para las imágenes */
+  object-fit: cover;
+  border-radius: 8px; /* Menor borde redondeado */
+}
+
+.tarjeta-producto h3 {
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+  margin: 8px 0; /* Menor espacio entre título y contenido */
+}
+
+.tarjeta-producto p {
+  font-size: 12px; /* Tamaño de fuente más pequeño */
+  color: #333;
+}
+
+.tarjeta-producto button {
+  padding: 8px; /* Botones más pequeños */
+  font-size: 12px; /* Texto de botón más pequeño */
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+/* Sección de detalles */
+.DetallesProduct {
+  padding: 20px;
+}
+
+/* Contenedor que agrupa las secciones de productos y detalles */
+main {
+  display: flex;
+  gap: 20px; /* Espacio entre productos y detalles */
+  padding: 20px;
+  max-width: 1200px; /* Ajusta según sea necesario */
+  margin: 0 auto; /* Centrar el contenedor */
+}
+
+/* Sección de productos */
+.products {
+  flex: 2; /* Ocupa dos veces más espacio que la sección de detalles */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+  max-height: 500px;
+  overflow-y: scroll;
+  background-color: #f9f9f9; /* Fondo para destacar */
+  border-radius: 5px;
+}
+
+/* Estilo general para la sección de detalles del producto */
+.DetallesProduct {
+  width: 250px; /* Ancho fijo para la sección */
+  max-width: 250px;
+  height: 550px; /* Altura fija */
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+  box-sizing: border-box;
+}
+
+
+/* Estilo de la imagen del producto */
+.DetallesProduct img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los textos de detalles del producto */
+.DetallesProduct p {
+  font-size: 13px;
+  color: #333;
+  margin: 3px 0;
+  text-align: left;
+  width: 100%;
+}
+
+/* Estilo del botón para agregar al carrito */
+.DetallesProduct button {
+  padding: 8px 16px;
+  font-size: 13px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.DetallesProduct button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para el campo de cantidad */
+.DetallesProduct input[type="number"] {
+  width: 50px;
+  padding: 4px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+/* Título de los detalles */
+.DetallesProduct h2 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* Ajuste del espaciado para etiquetas */
+.DetallesProduct label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.DetallesProduct p span {
+  font-weight: bold;
+}
+
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  position: relative;
+}
+
+footer a {
+  color: #4caf50; /* Verde de tu logo */
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.contenido p {
+  margin: 5px 0;
+}
+
+.links a {
+  margin: 0 5px;
+}
