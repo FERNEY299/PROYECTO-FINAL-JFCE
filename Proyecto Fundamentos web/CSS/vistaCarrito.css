@@ -1,0 +1,204 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url('../Imagenes/fondo.jpg') center / cover no-repeat;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.nombreEmpr h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #4caf50;
+}
+
+.nombreEmpr p {
+  margin: 0;
+  font-size: 12px;
+  color: #999;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+footer a {
+  color: #4caf50;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.contenido p, .links a {
+  margin: 5px 0;
+}
+
+/* Navegación */
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f8f8f8;
+  margin-bottom: 20px;
+}
+
+/* Botones Generales */
+button, #cancelarCompra, #continuarComprando {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 10px;
+}
+
+#cancelarCompra {
+  background-color: #f44336;
+  color: white;
+}
+
+#continuarComprando, .pago-tarjeta button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Vista del Carrito */
+main {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.tabla-carrito, .resumen-compra, .pago-tarjeta {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-carrito h2 {
+  margin-top: 0;
+}
+
+#tablaCarrito {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#tablaCarrito th, #tablaCarrito td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#tablaCarrito th {
+  background-color: #f4f4f4;
+}
+
+#tablaCarrito img {
+  width: 50px;
+  height: 50px;
+}
+
+#tablaCarrito button {
+  padding: 5px 10px;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 5px;
+}
+
+
+/* Formulario de Pago */
+.pago-tarjeta form {
+  display: flex;
+  flex-direction: column;
+}
+
+.pago-tarjeta label {
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.pago-tarjeta input,
+.pago-tarjeta select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.pago-tarjeta input[type="checkbox"] {
+  width: auto;
+  margin-left: 10px;
+}
+
+/* Botones del Formulario de Pago */
+#formTarjeta button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px; /* Espacio entre los botones */
+}
+
+#limpiarCampos {
+  background-color: #e74c3c /* Verde */
+}
+
+
+
+#confirmarCompra {
+  background-color: #388E3C; /* Verde oscuro */
+}
+
+
+
+/* Campo de Seguridad */
+.campo-codigo-seguridad {
+  margin-bottom: 15px;
+}
+
+.mostrar-codigo {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.mostrar-codigo input {
+  margin-right: 5px;
+}
+
+/* Acciones */
+.acciones {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
